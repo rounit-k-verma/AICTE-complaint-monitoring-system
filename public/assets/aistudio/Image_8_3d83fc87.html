@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed":"#001b3e","secondary-fixed-dim":"#aac7ff","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#6e3900","secondary":"#3b5e98","on-secondary-container":"#274d86","on-primary":"#ffffff","secondary-fixed":"#d7e3ff","surface-container-highest":"#d9e3fb","tertiary-fixed":"#ffdcc3","on-tertiary":"#ffffff","error":"#ba1a1a","surface-bright":"#f9f9ff","on-tertiary-fixed":"#2f1500","surface-variant":"#d9e3fb","primary-fixed":"#d5e3ff","surface-container":"#e8eeff","background":"#f9f9ff","error-container":"#ffdad6","tertiary-container":"#452100","secondary-container":"#9dbfff","surface":"#f9f9ff","on-primary-fixed-variant":"#324768","inverse-on-surface":"#ecf0ff","inverse-surface":"#273143","on-error":"#ffffff","on-surface-variant":"#44474e","on-secondary-fixed-variant":"#1f467f","on-primary-container":"#7d93b7","on-surface":"#111c2d","on-primary-fixed":"#021c3a","surface-container-lowest":"#ffffff","on-background":"#111c2d","tertiary-fixed-dim":"#ffb77d","outline-variant":"#c4c6ce","surface-container-low":"#f0f3ff","on-tertiary-container":"#da7911","outline":"#74777e","surface-dim":"#d0daf2","primary-container":"#142b4a","surface-tint":"#4a5f81","tertiary":"#271000","primary-fixed-dim":"#b2c7ee","inverse-primary":"#b2c7ee","primary":"#001632","surface-container-high":"#dfe8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","space-2xl":"3rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2rem","margin-mobile":"1rem"},fontFamily:{"label-sm":["Inter"],"headline-lg":["Montserrat"],"body-md":["Inter"],"body-lg":["Inter"],"label-lg":["Inter"],"data-mono":["JetBrains Mono"],"headline-xl-mobile":["Montserrat"],"headline-sm":["Montserrat"],"headline-xl":["Montserrat"],"body-sm":["Inter"],"headline-md":["Montserrat"],"label-md":["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"data-mono":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md border-b border-outline/20"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="AICTE CONNECT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vg3QXf0a_M43mgZwDpzs-0mb8LvktnShX7yNCCnMMqlvjgD5MfecSp8C2xEEybVe7NaReSFLdxIfuZXQG2uCAnBkrSTfmcgO3Nb8vB3zy-48MbZ3-wU2rjwBzk-G4jeS7JYSUwqE6yyBUCERpM1FzdCHYwPcCrCYVZ6Y60HcBjpMgp9IVBJphlA8GaRYMzIoDTk-8Im09c9YIhEs4DTBEKR2wjcIdEiqUJ8-OZJX1fbPUlQckPe3OTs9fy"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-primary tracking-tight leading-tight">AICTE CONNECT</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase">IICMSD</span></div></div><div class="flex items-center justify-between gap-space-xs"><span class="font-body-sm text-body-sm text-on-primary-container truncate">Complaint Monitoring</span><span class="inline-flex items-center px-space-xs py-0.5 rounded font-data-mono text-label-sm bg-surface-container-high/20 text-tertiary-fixed border border-tertiary-fixed/30">DEMO / SIH 2026</span></div></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-md flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high/15 text-on-primary font-bold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="overlap-detection" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">call_split</span><span class="font-label-lg text-label-lg">Overlap Detection</span></div><span class="inline-flex items-center px-1.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary text-on-tertiary-fixed border border-on-tertiary-container/30">3 New</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="institution-directory" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">apartment</span><span class="font-label-lg text-label-lg">Institution Directory</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="complaint-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-label-lg text-label-lg">Complaint Management</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="coordination-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Coordination Workspace</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="action-history-and-audit" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Action History &amp; Audit</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="alerts-and-notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Alerts &amp; Notifications</span></div><span class="inline-flex items-center px-1.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary">5</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-lg text-label-lg">Reports &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="user-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-lg text-label-lg">User Management</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-sm bg-primary border-t border-outline/20"><div class="flex items-center gap-space-sm mb-space-xs"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGoEIdlYWa1hxLGkYKTYI3iDxMOy_KpIuHt80RDfQKa11-aMBIqPo3GKe2dlaNLktmnotC9Ueit5Lavm5vq9kqndke-IGPlEvBjXX6sarez_Ry8OosXJ1wVMBHmzT91b2ZCPeZcgk326jIt0iwTlBjVSN3_3JjSD48cvPMh08ZMrD1eZzGzjWvUxHVEfiQUz8IHnrTR3NZOFgegY_SBfNQMnneTOCup12vhQyS--FavwjY3DT94Cr4Kw"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-secondary ring-2 ring-primary"></span></div><div class="flex-1 min-w-0"><p class="font-label-md text-label-md font-semibold text-on-primary truncate">Dr. Rajesh Sharma, IRS</p><p class="font-label-sm text-label-sm text-on-primary-container truncate">Joint Secretary &amp; Member Secy</p><p class="font-label-sm text-label-sm text-tertiary-fixed truncate">Regulation Bureau (RB)</p></div><a class="text-on-primary-container hover:text-on-primary transition-colors p-1 rounded" data-path="login" href="#" title="Sign out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin border-b border-surface-container"><div class="flex items-center gap-space-sm min-w-0 max-w-xs"><span class="material-symbols-outlined text-outline text-[18px]">account_balance</span><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant truncate"><span>AICTE Central</span><span class="text-outline">/</span><span>Regulation Bureau</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Overview</span></div></div><div class="flex-1 max-w-md mx-space-lg"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-1.5 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary border border-outline-variant/40" placeholder="Search institution, AICTE ID (e.g. AICTE-DEMO-1024), complaint ID..." type="text"/><span class="absolute right-space-sm px-1.5 py-0.5 rounded font-data-mono text-label-sm bg-surface-container-highest text-on-surface-variant">Ctrl+K</span></div></div><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed border border-tertiary-fixed-variant/20"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>DEMO PROTOTYPE DATA</span><div class="flex items-center gap-1 px-space-xs py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">language</span><span>English (IN)</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg hover:bg-surface-container"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></button><button class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span><span>Log Grievance</span></button><div class="flex items-center gap-space-xs pl-space-xs cursor-pointer border-l border-surface-container"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGoEIdlYWa1hxLGkYKTYI3iDxMOy_KpIuHt80RDfQKa11-aMBIqPo3GKe2dlaNLktmnotC9Ueit5Lavm5vq9kqndke-IGPlEvBjXX6sarez_Ry8OosXJ1wVMBHmzT91b2ZCPeZcgk326jIt0iwTlBjVSN3_3JjSD48cvPMh08ZMrD1eZzGzjWvUxHVEfiQUz8IHnrTR3NZOFgegY_SBfNQMnneTOCup12vhQyS--FavwjY3DT94Cr4Kw"/><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command Strip & Action Bar -->
+<div class="w-full bg-surface-container-low px-margin py-space-md border-b border-surface-container">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-1">
+<span class="inline-flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">domain_verification</span>
+            AICTE Central
+          </span>
+<span class="text-outline">/</span>
+<span>Case Coordination</span>
+<span class="text-outline">/</span>
+<span class="font-data-mono font-semibold text-primary">GRP-2026-088</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Cross-Bureau Coordination Workspace</h1>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-ping"></span>
+            ACTIVE SYNC SESSION
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl mt-0.5">
+          Shared operational room for multi-Bureau collaborative inquiry, joint statutory notices, and cross-functional evidence ledger while preserving independent case sovereignty under AICTE Act 1987.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap justify-end">
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span>Export Dossier (PDF)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">video_camera_front</span>
+<span>Schedule Briefing (VC)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-secondary transition-colors shadow-sm font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">gavel</span>
+<span>Issue Joint Show-Cause</span>
+</button>
+<div class="relative">
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shadow-sm" title="More Operations">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Canvas Container -->
+<div class="px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Persistent Linked Case Group Header Banner -->
+<div class="rounded-xl overflow-hidden shadow-sm bg-primary-container text-on-primary relative">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="p-space-lg relative z-10 flex flex-col gap-space-md">
+<!-- Top row: ID, Status, Quick Indicators -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-outline/20">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest/20 font-data-mono text-label-md font-bold tracking-wider text-primary-fixed">
+              #GRP-2026-088
+            </span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">
+              Joint Financial &amp; Operational Audit Dossier
+            </span>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+              IN ACTIVE COORDINATION (DAY 6)
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded font-data-mono text-label-sm bg-surface-container-highest/15 text-primary-fixed border border-primary-fixed/20">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span>
+              SOVEREIGNTY LOCKED
+            </span>
+</div>
+</div>
+<!-- Meta Details: Entity info + Participating Bureaus -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider mb-0.5">Target Institution</span>
+<span class="font-label-lg text-label-lg font-bold text-on-primary">North Valley Institute of Technology</span>
+<span class="font-data-mono text-label-sm text-primary-fixed-dim">AICTE-DEMO-1024 • Pune, Maharashtra</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider mb-0.5">Designated Coordinator</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">verified_user</span>
+<span class="font-label-md text-label-md font-semibold text-on-primary">Dr. Rajesh Sharma, IRS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container">Joint Secy &amp; Member Secy Addl (RB)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider mb-0.5">Participating Bureaus</span>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="px-2.5 py-1 rounded font-label-sm text-label-sm font-bold bg-secondary text-on-secondary shadow-sm">
+                PGRC (Grievances)
+              </span>
+<span class="text-on-primary-container font-headline-sm">+</span>
+<span class="px-2.5 py-1 rounded font-label-sm text-label-sm font-bold bg-primary text-on-primary shadow-sm border border-outline/30">
+                RB (Regulation)
+              </span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider mb-0.5">Statutory Milestones</span>
+<div class="flex items-center justify-between text-label-sm font-data-mono text-primary-fixed mb-1">
+<span>Overall Progress</span>
+<span class="font-bold">58%</span>
+</div>
+<div class="w-full bg-surface-container-highest/20 h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-secondary-container to-tertiary-fixed h-full rounded-full w-[58%]"></div>
+</div>
+</div>
+</div>
+<!-- Section 10(p) Statutory Sovereignty Safeguard Box -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-highest/10 border border-outline/20 flex items-start gap-space-sm text-surface-container-low">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] flex-shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-tertiary-fixed tracking-wide uppercase">
+              Section 10(p) Statutory Sovereignty Clause
+            </span>
+<p class="font-body-sm text-body-sm text-surface-container leading-relaxed">
+              Under AICTE Act 1987 Section 10(p), this coordination room acts as an evidentiary and inquiry bridge. Both <span class="font-semibold text-on-primary">PGRC</span> and <span class="font-semibold text-on-primary">Regulation Bureau</span> retain autonomous dockets, sovereign disposition jurisdiction, and distinct final orders. No unilateral closure or evidence suppression applies.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3-Column Enterprise Operations Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- ================= LEFT + CENTER 8-COL REGION ================= -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Section A: Synchronized Dual Dossiers (Parallel Sovereignty) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">compare_arrows</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Synchronized Sovereign Dockets</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Independent Dockets Linked</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Sovereign Card 1: PGRC -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="w-full h-1 bg-secondary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-secondary text-on-secondary">
+                      PGRC
+                    </span>
+<span class="font-data-mono font-bold text-label-md text-on-surface">PGRC-2026-0102</span>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant">12 Jan 2026</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-2">
+                    Unauthorized 7th Pay Salary Arrears Withholding &amp; EPF Default
+                  </h3>
+<div class="flex items-center gap-space-xs mt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">person_outline</span>
+<span>Officer: <strong class="text-on-surface font-semibold">S. K. Verma</strong> (Asst. Director)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Jurisdiction Complainant</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Whistleblower Protected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Faculty Welfare Association (48 Senior Professors)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+                    Core Finding: Non-payment of basic pay revision across 14 months; total default estimated at ₹3.82 Cr with unremitted PF sums.
+                  </p>
+</div>
+<div class="mt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                    SLA: 12 Days Remaining
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">Status: INQUIRY</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Bureau-Specific Autonomous Operations</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="px-2 py-1.5 rounded text-left text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">note_add</span>
+<span>Internal Memo</span>
+</button>
+<button class="px-2 py-1.5 rounded text-left text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">request_quote</span>
+<span>Audit Request</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sovereign Card 2: Regulation Bureau -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="w-full h-1 bg-primary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-primary text-on-primary">
+                      RB (Regulation)
+                    </span>
+<span class="font-data-mono font-bold text-label-md text-on-surface">RB-2026-0087</span>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant">22 Jan 2026</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-2">
+                    Illegal Capitation Fees &amp; Unapproved Lab Infrastructure Shuttering
+                  </h3>
+<div class="flex items-center gap-space-xs mt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">person_outline</span>
+<span>Officer: <strong class="text-on-surface font-semibold">Dr. A. K. Rao</strong> (Deputy Director)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Jurisdiction Complainant</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Public Grievance Intake</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Parent-Student Council &amp; B.Tech Cohort</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+                    Core Finding: Mandatory ₹42,000 lab fee collected without Board authorization; Mechanical CAD and Robotics labs locked.
+                  </p>
+</div>
+<div class="mt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    SLA: 22 Days Remaining
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">Status: INSPECTION DEPUTED</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Bureau-Specific Autonomous Operations</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="px-2 py-1.5 rounded text-left text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">warning</span>
+<span>Show-Cause Notice</span>
+</button>
+<button class="px-2 py-1.5 rounded text-left text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">flaky</span>
+<span>Surprise Squad</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section B: Joint Cross-Bureau Action Timeline & Live Coordination Trail -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Joint Coordination Audit Trail</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Immutable Cross-Bureau Activity Stream</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container-high text-on-secondary-fixed-variant">
+                5 Events Logged
+              </span>
+<button class="p-1 rounded text-outline hover:text-on-surface hover:bg-surface-container" title="Filter Timeline">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Timeline Track -->
+<div class="relative pl-6 flex flex-col gap-space-lg">
+<!-- Timeline vertical track line -->
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container"></div>
+<!-- Event 1: Today 10:15 AM -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">search_insights</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">Dr. Rajesh Sharma, IRS</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[10px] bg-primary text-on-primary font-bold">RB LEAD</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">added Coordinated Audit Finding</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">Today, 10:15 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-space-xs bg-surface-container-lowest p-space-sm rounded">
+                  “Cross-referenced institutional balance sheets with Form-9 annual disclosure. The <strong>₹3.82 Cr faculty salary deficit directly correlates with an unauthorized ₹4.1 Cr diversion</strong> booked under 'Auxiliary Campus Infrastructure' in Hinjawadi Phase 2 without AICTE Council ratification.”
+                </p>
+<div class="mt-space-xs flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">attachment</span> Form-9_Audit_Report_2024-25.pdf
+                  </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary-fixed-variant bg-tertiary-fixed/30 px-2 py-0.5 rounded font-semibold">
+                    Evidentiary Value: High
+                  </span>
+</div>
+</div>
+</div>
+<!-- Event 2: Yesterday 04:30 PM -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">group_add</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">Dr. A. K. Rao</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[10px] bg-secondary-fixed text-on-secondary-fixed font-bold">RB</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">dispatched Field Protocol</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">Yesterday, 04:30 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Joint Inspection Committee formally constituted under Regional Officer WRO Mumbai. Physical sealed audit scheduled for 02 February 2026 covering Computer Labs and Robotics Wing.
+                </p>
+</div>
+</div>
+<!-- Event 3: 25 Jan 2026 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary-fixed ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">upload_file</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">S. K. Verma</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[10px] bg-surface-container-high text-on-secondary-container font-bold">PGRC</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">submitted Shared Evidence</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">25 Jan 2026, 14:10</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Sworn affidavit signed by 48 faculty members alongside EPFO certified ledger statement submitted into the joint digital vault for simultaneous review.
+                </p>
+</div>
+</div>
+<!-- Event 4: 24 Jan 2026 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">handshake</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">Dr. Rajesh Sharma, IRS</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">ratified Cross-Bureau Linkage</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">24 Jan 2026, 11:05</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Approved 91% semantic overlap recommendation from engine. Formally initialized Coordination Group #GRP-2026-088. Autonomous authority boundaries codified.
+                </p>
+</div>
+</div>
+<!-- Event 5: 23 Jan 2026 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-outline-variant flex items-center justify-center text-on-surface ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">auto_awesome</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-mono text-label-md font-bold text-on-surface">System Telemetry Engine v4.2</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[10px] bg-tertiary-fixed text-on-tertiary-fixed font-bold">AI OVERLAP 91%</span>
+</div>
+<span class="font-data-mono text-label-sm text-outline">23 Jan 2026, 09:22</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Automated NLP entity correlation detected common management entity, financial ledger overlap, and reciprocal institutional address between PGRC-2026-0102 and RB-2026-0087.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section C: Joint Workstream Tasks & Real-time Ledger Input -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Coordinated Follow-Up Checklist (5 cols) -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">checklist</span>
+<span>Joint Action Items</span>
+</h4>
+<span class="font-data-mono text-label-sm text-outline">1 of 3 Done</span>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Task 1 (Done) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<input checked="" class="mt-1 rounded text-secondary focus:ring-0 cursor-default" disabled="" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-70">
+                      Cross-verify EPFO PF deposit receipts
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">
+                      Assigned: S.K. Verma (PGRC) • Verified 100% gap
+                    </span>
+</div>
+</div>
+<!-- Task 2 (Pending) -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-space-sm">
+<input class="mt-1 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">
+                      WRO Mumbai physical lab spot-check
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">
+                      Assigned: Dr. A.K. Rao (RB) • <strong class="text-error font-medium">Due: 02 Feb 2026</strong>
+</span>
+</div>
+</div>
+<!-- Task 3 (Pending) -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-space-sm">
+<input class="mt-1 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">
+                      Joint virtual hearing with Trust Secretary
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">
+                      Assigned: Joint Secretariat • Scheduled 05 Feb
+                    </span>
+</div>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg bg-surface-container-low text-secondary hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Assign Coordinated Action</span>
+</button>
+</div>
+<!-- Real-Time Cross-Bureau Coordination Entry (7 cols) -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+<span>Post Inter-Bureau Finding</span>
+</h4>
+<span class="font-data-mono text-label-sm text-tertiary-fixed-variant bg-tertiary-fixed/30 px-2 py-0.5 rounded font-semibold">
+                  IMMUTABLE LOG
+                </span>
+</div>
+<div class="mt-space-sm flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">
+                  Regulatory Finding / Inquiry Cross-Reference
+                </label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40" placeholder="Type finding, cite official records, or tag officers using @ (e.g. @Dr. Rao, @S.K. Verma)..." rows="3"></textarea>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase font-semibold">Classification</label>
+<select class="w-full py-1.5 px-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface border border-outline-variant/40 mt-0.5 focus:outline-none">
+<option>Standard Cross-Bureau Memo</option>
+<option>Critical Evidentiary Overlap</option>
+<option>Joint Statutory Notice Citation</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase font-semibold">Attach Evidence</label>
+<button class="w-full py-1.5 px-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm mt-0.5 flex items-center justify-center gap-1 hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Browse File (PDF/DOC)</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">
+                Digital Signature: <strong class="text-on-surface font-mono">DR-SHARMA-IRS-8821</strong>
+</span>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-secondary font-label-md text-label-md font-semibold transition-colors shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Post Note to Ledger</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT SIDEBAR 4-COL REGION ================= -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Widget 1: Statutory SLA Synchronization Status -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">timer</span>
+<span>Statutory SLA Synchronization</span>
+</span>
+<span class="font-data-mono text-label-sm text-tertiary-fixed-variant font-bold bg-tertiary-fixed/30 px-2 py-0.5 rounded">
+              RULE 14 COMPLIANT
+            </span>
+</div>
+<div class="mt-space-md flex items-center gap-space-md">
+<div class="relative w-20 h-20 flex-shrink-0">
+<!-- Radial SVG Mini Gauge -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-on-tertiary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="68, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-none">12</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Days Left</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">First Joint Reporting Milestone</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">
+                Statutory mandatory submission of preliminary joint inquiry report to Member Secretary.
+              </p>
+<div class="mt-2 flex items-center gap-1 text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Escalation Risk: Low / On-Track</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Widget 2: Shared Evidentiary Vault & Linked Documentation -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">folder_shared</span>
+<span>Shared Evidence Vault</span>
+</span>
+<span class="font-data-mono text-label-sm text-outline">4 Files</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<div class="p-space-xs rounded-lg hover:bg-surface-container-low transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-error text-[24px] flex-shrink-0">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">Form-9_Audit_Report_2024-25.pdf</span>
+<span class="font-data-mono text-[10px] text-outline">4.2 MB • RB Repository • Verified</span>
+</div>
+</div>
+<button class="p-1 rounded text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="p-space-xs rounded-lg hover:bg-surface-container-low transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-error text-[24px] flex-shrink-0">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">Faculty_Salary_Withholding_Affidavit.pdf</span>
+<span class="font-data-mono text-[10px] text-outline">1.8 MB • PGRC Repository • Notarized</span>
+</div>
+</div>
+<button class="p-1 rounded text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="p-space-xs rounded-lg hover:bg-surface-container-low transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[24px] flex-shrink-0">description</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">Student_PTA_Fee_Receipts_Sample.pdf</span>
+<span class="font-data-mono text-[10px] text-outline">850 KB • RB Repository • 14 Exhibits</span>
+</div>
+</div>
+<button class="p-1 rounded text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="p-space-xs rounded-lg hover:bg-surface-container-low transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[24px] flex-shrink-0">inventory_2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">AICTE_Approval_Letter_EOA_2025.pdf</span>
+<span class="font-data-mono text-[10px] text-outline">1.1 MB • AICTE Master Registry</span>
+</div>
+</div>
+<button class="p-1 rounded text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<button class="w-full mt-space-sm py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Upload Joint Evidence</span>
+</button>
+</div>
+<!-- Widget 3: Inter-Bureau Contact Directory -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">contacts</span>
+<span>Designated Liaison Directory</span>
+</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-outline">
+              4 Officers
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Officer 1 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">
+                  RS
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Rajesh Sharma, IRS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Coordination Lead (RB)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:text-secondary" title="Direct Intercom: 4421">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-secondary" title="Email: r.sharma@aicte.gov.in">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+<!-- Officer 2 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">
+                  AR
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. A. K. Rao</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deputy Director (RB Enforcement)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:text-secondary" title="Direct Intercom: 4488">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-secondary" title="Email: ak.rao@aicte.gov.in">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+<!-- Officer 3 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-tertiary-fixed flex items-center justify-center font-bold text-xs">
+                  SV
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">S. K. Verma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assistant Director (PGRC)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:text-secondary" title="Direct Intercom: 4512">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-secondary" title="Email: sk.verma@aicte.gov.in">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+<!-- Officer 4 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface font-bold text-xs flex items-center justify-center">
+                  WM
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Regional Officer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WRO Mumbai Regional Office</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:text-secondary" title="Direct Intercom: 1109">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-secondary" title="Email: wro@aicte-india.org">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Widget 4: Quick Statutory Guidance Callout -->
+<div class="bg-surface-container-high/40 p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+<span>Standard Operating Procedure 8.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs leading-relaxed">
+            Upon discovery of coordinated nexus, show-cause notices issued under Regulation Bureau must explicitly cite PGRC evidence bundles as corroborating materials without terminating the distinct PGRC docket.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

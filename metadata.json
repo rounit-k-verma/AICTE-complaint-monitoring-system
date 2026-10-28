@@ -1,0 +1,6 @@
+{
+  "name": "AICTE ONEVIEW - Unified Complaint Monitoring",
+  "description": "AICTE National Regulatory Portal (AICTE ONEVIEW / IICMSD Subsystem) with Multi-Signal AI Overlap Detection Engine, Cross-Bureau Coordination Workspaces, and Master Institutional Records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
