@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed":"#001b3e","secondary-fixed-dim":"#aac7ff","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#6e3900","secondary":"#3b5e98","on-secondary-container":"#274d86","on-primary":"#ffffff","secondary-fixed":"#d7e3ff","surface-container-highest":"#d9e3fb","tertiary-fixed":"#ffdcc3","on-tertiary":"#ffffff","error":"#ba1a1a","surface-bright":"#f9f9ff","on-tertiary-fixed":"#2f1500","surface-variant":"#d9e3fb","primary-fixed":"#d5e3ff","surface-container":"#e8eeff","background":"#f9f9ff","error-container":"#ffdad6","tertiary-container":"#452100","secondary-container":"#9dbfff","surface":"#f9f9ff","on-primary-fixed-variant":"#324768","inverse-on-surface":"#ecf0ff","inverse-surface":"#273143","on-error":"#ffffff","on-surface-variant":"#44474e","on-secondary-fixed-variant":"#1f467f","on-primary-container":"#7d93b7","on-surface":"#111c2d","on-primary-fixed":"#021c3a","surface-container-lowest":"#ffffff","on-background":"#111c2d","tertiary-fixed-dim":"#ffb77d","outline-variant":"#c4c6ce","surface-container-low":"#f0f3ff","on-tertiary-container":"#da7911","outline":"#74777e","surface-dim":"#d0daf2","primary-container":"#142b4a","surface-tint":"#4a5f81","tertiary":"#271000","primary-fixed-dim":"#b2c7ee","inverse-primary":"#b2c7ee","primary":"#001632","surface-container-high":"#dfe8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","space-2xl":"3rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2rem","margin-mobile":"1rem"},fontFamily:{"label-sm":["Inter"],"headline-lg":["Montserrat"],"body-md":["Inter"],"body-lg":["Inter"],"label-lg":["Inter"],"data-mono":["JetBrains Mono"],"headline-xl-mobile":["Montserrat"],"headline-sm":["Montserrat"],"headline-xl":["Montserrat"],"body-sm":["Inter"],"headline-md":["Montserrat"],"label-md":["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"data-mono":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md border-b border-outline/20"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="AICTE CONNECT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vg3QXf0a_M43mgZwDpzs-0mb8LvktnShX7yNCCnMMqlvjgD5MfecSp8C2xEEybVe7NaReSFLdxIfuZXQG2uCAnBkrSTfmcgO3Nb8vB3zy-48MbZ3-wU2rjwBzk-G4jeS7JYSUwqE6yyBUCERpM1FzdCHYwPcCrCYVZ6Y60HcBjpMgp9IVBJphlA8GaRYMzIoDTk-8Im09c9YIhEs4DTBEKR2wjcIdEiqUJ8-OZJX1fbPUlQckPe3OTs9fy"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-primary tracking-tight leading-tight">AICTE CONNECT</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase">IICMSD</span></div></div><div class="flex items-center justify-between gap-space-xs"><span class="font-body-sm text-body-sm text-on-primary-container truncate">Complaint Monitoring</span><span class="inline-flex items-center px-space-xs py-0.5 rounded font-data-mono text-label-sm bg-surface-container-high/20 text-tertiary-fixed border border-tertiary-fixed/30">DEMO / SIH 2026</span></div></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-md flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high/15 text-on-primary font-bold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="overlap-detection" href="#"><span class="font-label-lg text-label-lg">Overlap Detection</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary text-on-tertiary-fixed border border-on-tertiary-container/30">3 New</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="institution-directory" href="#"><span class="font-label-lg text-label-lg">Institution Directory</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="complaint-management" href="#"><span class="font-label-lg text-label-lg">Complaint Management</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="coordination-workspace" href="#"><span class="font-label-lg text-label-lg">Coordination Workspace</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="alerts-and-notifications-center" href="#"><span class="font-label-lg text-label-lg">Alerts &amp; Notifications</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full font-label-sm text-label-sm bg-error text-on-error font-bold">5 unread</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="action-history-and-audit" href="#"><span class="font-label-lg text-label-lg">Action History &amp; Audit</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="font-label-lg text-label-lg">Reports &amp; Analytics</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="user-management" href="#"><span class="font-label-lg text-label-lg">User Management</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-primary-container hover:bg-surface-container-high/10 hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="p-space-sm bg-primary border-t border-outline/20"><div class="flex items-center gap-space-sm mb-space-xs"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGoEIdlYWa1hxLGkYKTYI3iDxMOy_KpIuHt80RDfQKa11-aMBIqPo3GKe2dlaNLktmnotC9Ueit5Lavm5vq9kqndke-IGPlEvBjXX6sarez_Ry8OosXJ1wVMBHmzT91b2ZCPeZcgk326jIt0iwTlBjVSN3_3JjSD48cvPMh08ZMrD1eZzGzjWvUxHVEfiQUz8IHnrTR3NZOFgegY_SBfNQMnneTOCup12vhQyS--FavwjY3DT94Cr4Kw"/><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-secondary ring-2 ring-primary"></span></div><div class="flex-1 min-w-0"><p class="font-label-md text-label-md font-semibold text-on-primary truncate">Dr. Rajesh Sharma, IRS</p><p class="font-label-sm text-label-sm text-on-primary-container truncate">Joint Secretary &amp; Member Secy</p><p class="font-label-sm text-label-sm text-tertiary-fixed truncate">Regulation Bureau (RB)</p></div><a class="text-on-primary-container hover:text-on-primary transition-colors p-1 rounded" data-path="login" href="#" title="Sign out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin border-b border-surface-container"><div class="flex items-center gap-space-sm min-w-0 max-w-lg"><span class="material-symbols-outlined text-outline text-[18px]">account_balance</span><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant truncate"><span>AICTE Central</span><span class="text-outline">/</span><span>Grievance Operations</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Alerts &amp; Notifications Center</span></div></div><div class="flex-1 max-w-md mx-space-lg"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-1.5 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary border border-outline-variant/40" placeholder="Search institution, AICTE ID (e.g. AICTE-DEMO-1024), complaint ID..." type="text"/><span class="absolute right-space-sm px-1.5 py-0.5 rounded font-data-mono text-label-sm bg-surface-container-highest text-on-surface-variant">Ctrl+K</span></div></div><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed border border-tertiary-fixed-variant/20"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>DEMO PROTOTYPE DATA</span><div class="flex items-center gap-1 px-space-xs py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">language</span><span>English (IN)</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg hover:bg-surface-container"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></button><button class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span><span>Log Grievance</span></button><div class="flex items-center gap-space-xs pl-space-xs cursor-pointer border-l border-surface-container"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGoEIdlYWa1hxLGkYKTYI3iDxMOy_KpIuHt80RDfQKa11-aMBIqPo3GKe2dlaNLktmnotC9Ueit5Lavm5vq9kqndke-IGPlEvBjXX6sarez_Ry8OosXJ1wVMBHmzT91b2ZCPeZcgk326jIt0iwTlBjVSN3_3JjSD48cvPMh08ZMrD1eZzGzjWvUxHVEfiQUz8IHnrTR3NZOFgegY_SBfNQMnneTOCup12vhQyS--FavwjY3DT94Cr4Kw"/><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas -->
+<div class="relative w-full overflow-hidden px-margin py-space-lg flex flex-col gap-space-lg bg-surface">
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none"></div>
+<!-- Header & Administrative Top Action Strip -->
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+            LIVE TELEMETRY ACTIVE
+          </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container-high text-on-surface-variant font-semibold">
+            AICTE-IICMSD // NOTIF-SYS-v4.2
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Alerts &amp; Statutory Notification Center
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Centralized operational telemetry tracking real-time AI overlap detections, statutory SLA risks, inter-bureau transfer requisitions, and coordinated inspection milestones.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm flex-shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all" id="markAllReadBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">done_all</span>
+<span>Mark All as Read</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Thresholds &amp; Rules</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-secondary transition-all">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Register (.CSV)</span>
+</button>
+</div>
+</div>
+<!-- 5-Card Operational Metric Telemetry Strip -->
+<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1 -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold">Unread Alerts</span>
+<div class="p-1.5 rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">mark_email_unread</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold" id="unreadCounter">5</span>
+<span class="font-label-sm text-label-sm text-error font-medium">Requires triage</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Priority P0/P1 queue</span>
+<span class="font-data-mono font-medium">95.2% SLA</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container font-semibold">High Overlaps</span>
+<div class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">3</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-medium">≥ 88% Match</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>PGRC ↔ RB / AB</span>
+<span class="font-data-mono font-medium">AI v4.2</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold">SLA Breaches</span>
+<div class="p-1.5 rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">timer_off</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">2</span>
+<span class="font-label-sm text-label-sm text-error font-medium">≤ 48h Escalation</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Statutory order due</span>
+<span class="font-data-mono font-medium text-error">CRITICAL</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">SLA Warnings</span>
+<div class="p-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">8</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Approaching</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>≤ 5 calendar days</span>
+<span class="font-data-mono font-medium">Action P2</span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-primary-container text-on-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">Bureau Sync</span>
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary">8 / 8 Active</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-primary-container font-label-sm text-label-sm">
+<span>Synced at 09:30 IST</span>
+<span class="font-data-mono text-secondary-fixed">0.12s Ping</span>
+</div>
+</div>
+</div>
+<!-- Interactive Navigation Tabs & Filter Ribbon -->
+<div class="relative z-10 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Tabs Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs" id="filterTabs">
+<button class="tab-btn active px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm transition-all" data-tab="all">
+<span>All Alerts</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[11px] bg-surface-container-highest/20 text-on-primary">14</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" data-tab="overlap">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span>Overlap Detections</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[11px] bg-tertiary-fixed text-on-tertiary-fixed font-bold">3</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" data-tab="sla">
+<span>SLA Risk &amp; Overdue</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[11px] bg-error-container text-on-error-container font-bold">5</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" data-tab="transfers">
+<span>Inter-Bureau Transfers</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[11px] bg-surface-container-highest text-on-surface font-bold">2</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" data-tab="inspections">
+<span>Coordination &amp; Inspections</span>
+<span class="px-1.5 py-0.2 rounded font-data-mono text-[11px] bg-surface-container-highest text-on-surface font-bold">4</span>
+</button>
+</div>
+<!-- Unread Only Toggle -->
+<label class="flex items-center gap-2.5 cursor-pointer select-none">
+<input class="sr-only peer" id="unreadToggle" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-focus:ring-2 peer-focus:ring-secondary relative transition-colors">
+<div class="dot absolute left-1 top-1 bg-surface-container-lowest w-4 h-4 rounded-full transition-transform peer-checked:translate-x-4"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Show Unread Only</span>
+</label>
+</div>
+<!-- Secondary Controls Bar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs">
+<div class="md:col-span-5 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="searchInput" placeholder="Filter by docket ID, institution, bureau, or keyword..." type="text"/>
+</div>
+<div class="md:col-span-3">
+<select class="w-full py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="bureauFilter">
+<option value="ALL">All Bureaus (RB, PGRC, AB, PAPC)</option>
+<option value="RB">Regulation Bureau (RB)</option>
+<option value="PGRC">Public Grievance Redressal (PGRC)</option>
+<option value="AB">Approval Bureau (AB)</option>
+<option value="PAPC">Policy &amp; Academic Planning (PAPC)</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<select class="w-full py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="severityFilter">
+<option value="ALL">All Severities</option>
+<option value="P0">Critical / P0</option>
+<option value="P1">High / P1</option>
+<option value="P2">Medium / P2</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<select class="w-full py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+<option>Past 7 Days</option>
+<option>Past 24 Hours</option>
+<option>Past 30 Days</option>
+<option>Current Fiscal Quarter</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Main Content Area: Split 8-Col Feed & 4-Col Telemetry Panel -->
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: The Interactive Notification Feed (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md" id="alertsFeed">
+<!-- ALERT CARD 1: Critical Overlap Detected -->
+<article class="alert-item group relative flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all" data-bureau="PGRC,RB" data-card-id="1" data-category="overlap" data-severity="P0" data-unread="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-on-tertiary-container"></div>
+<!-- Card Header & Meta -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                CRITICAL / P0 • HIGH-CONFIDENCE OVERLAP (91%)
+              </span>
+<span class="status-unread-pill px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                NEW UNREAD
+              </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container text-on-surface-variant">
+                #GRP-2026-088
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>14 mins ago (09:16 IST)</span>
+</div>
+</div>
+<!-- Institution Reference & Correlated Dockets -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs pb-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                North Valley Institute of Technology
+              </div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-data-mono text-secondary font-semibold">AICTE-DEMO-1024</span>
+<span>•</span>
+<span>Pune, Maharashtra (WRO)</span>
+<span>•</span>
+<span class="font-semibold text-on-surface">PGRC ↔ Regulation Bureau</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-outline">AI Confidence</span>
+<span class="font-data-mono text-headline-sm text-on-tertiary-container font-bold">91.4%</span>
+</div>
+<svg class="w-10 h-10 -rotate-90 text-on-tertiary-container" viewbox="0 0 36 36">
+<path class="text-surface-container-highest stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="91.4, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+<!-- Correlated Dockets Pill Array -->
+<div class="my-space-xs p-space-sm rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<span class="material-symbols-outlined text-secondary text-[20px]">compare_arrows</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Docket Pair Detected</span>
+<span class="font-data-mono text-body-sm text-on-surface font-semibold">
+                  PGRC-2026-0102 <span class="text-outline font-normal">↔</span> RB-2026-0087
+                </span>
+</div>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm italic w-full md:w-auto md:text-right">
+              Salary Withholding (Faculty 7th CPC) ↔ Unauthorized Lab Dev Levies
+            </div>
+</div>
+<!-- Summary Body -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            Multi-signal convergence detected between PGRC staff non-payment grievance and Regulation Bureau unauthorized fee assessment. Financial ledger correlation indicates potential tuition fund diversion violating AICTE Approval Process Handbook (APH) Appendix 4.
+          </p>
+<!-- Assigned Officers & Recommended Action -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-low/40 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">PGRC: S. K. Verma</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">RB: Dr. A. K. Rao</span>
+</div>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>Recommended: Convene Joint Review</span>
+</div>
+</div>
+<!-- Action Footer Buttons -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Review Overlap Match</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">group_work</span>
+<span>Open Workspace #GRP-088</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" onclick="toggleCardRead(this)">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="read-toggle-label">Mark as Read</span>
+</button>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" title="Snooze alert for 4 hours">
+<span class="material-symbols-outlined text-[16px]">snooze</span>
+<span>4h</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ALERT CARD 2: Statutory SLA Breach -->
+<article class="alert-item group relative flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all" data-bureau="RB" data-card-id="2" data-category="sla" data-severity="P0" data-unread="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-error"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">error</span>
+                STATUTORY SLA BREACH • 48H ESCALATION NOTICE
+              </span>
+<span class="status-unread-pill px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                NEW UNREAD
+              </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container text-on-surface-variant">
+                RB-2026-0091
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>1 hour ago (08:30 IST)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs pb-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Apex Institute of Advanced Computing
+              </div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-data-mono text-secondary font-semibold">AICTE-DEMO-2048</span>
+<span>•</span>
+<span>Bengaluru, Karnataka (SWRO)</span>
+<span>•</span>
+<span class="font-semibold text-error">Overdue by +48 Hours</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-error-container/30 text-on-error-container">
+<span class="material-symbols-outlined text-[20px] text-error">alarm_off</span>
+<div class="flex flex-col text-right font-data-mono text-label-sm">
+<span class="font-bold text-error">SLA: 30 DAYS</span>
+<span class="text-on-error-container">DAY 32 ACTIVE</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            Statutory 30-day resolution SLA expired 2 days ago regarding severe faculty shortage (1:45 ratio vs 1:15 standard norm). Show-cause notice draft pending Deputy Director signature. Mandatory escalation dispatched to Joint Secretary / Member Secretary.
+          </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Assigned Bureau Officer: <strong class="text-on-surface font-medium">M. N. Nambiar (RB-IV)</strong></span>
+<span class="text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+              Executive Order Required
+            </span>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-on-error-container transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Issue Expedited Show-Cause</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Inspect Docket</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[16px]">forward</span>
+<span>Escalate to Member Secy</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" onclick="toggleCardRead(this)">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="read-toggle-label">Mark as Read</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ALERT CARD 3: Inter-Bureau Transfer Requisition -->
+<article class="alert-item group relative flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all" data-bureau="AB,RB" data-card-id="3" data-category="transfers" data-severity="P1" data-unread="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-secondary"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">move_up</span>
+                INTER-BUREAU TRANSFER REQUISITION
+              </span>
+<span class="status-unread-pill px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                NEW UNREAD
+              </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container text-on-surface-variant">
+                AB-2026-0045
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>3 hours ago (06:45 IST)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs pb-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Kalinga Institute of Applied Sciences
+              </div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-data-mono text-secondary font-semibold">AICTE-DEMO-4411</span>
+<span>•</span>
+<span>Bhubaneswar, Odisha (ERO)</span>
+<span>•</span>
+<span class="font-semibold text-secondary">AB → Regulation Bureau</span>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Section 10(p) AICTE Act
+            </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            Approval Bureau has formally requisitioned docket transfer to Regulation Bureau for preliminary disciplinary inquiry regarding Supernumerary NRI/PIO Seat Irregularities. Forwarded by Dispatcher K. Dasgupta (AB) to Designated Recipient Dr. Rajesh Sharma, IRS (RB).
+          </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Requisitioning Officer: <strong class="text-on-surface font-medium">K. Dasgupta (AB-Central)</strong></span>
+<span class="text-secondary font-semibold">Response window: 24 Hours</span>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Accept Transfer Docket</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Transfer Dossier</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-error hover:bg-error-container/20 font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[16px]">close</span>
+<span>Reject with Grounds</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" onclick="toggleCardRead(this)">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="read-toggle-label">Mark as Read</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ALERT CARD 4: Coordination Milestone (Read) -->
+<article class="alert-item group relative flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest/70 shadow-sm hover:shadow-md transition-all" data-bureau="RB" data-card-id="4" data-category="inspections" data-severity="P2" data-unread="false">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-outline-variant"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">assignment_turned_in</span>
+                COORDINATION MILESTONE &amp; JOINT INSPECTION
+              </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container text-on-surface-variant">
+                #GRP-2026-088
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>Yesterday, 17:30 IST</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs pb-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                North Valley Institute of Technology
+              </div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-data-mono text-secondary font-semibold">AICTE-DEMO-1024</span>
+<span>•</span>
+<span>Regional Office (WRO Mumbai)</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Committee Scheduled</span>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+              Date: 02 Feb 2026
+            </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            Joint Physical Inspection Committee order finalized for 02 Feb 2026. Regional Officer WRO Mumbai confirmed participation alongside Regulation Bureau audit officer. Acknowledged by Joint Secretary Dr. Rajesh Sharma, IRS.
+          </p>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>View Inspection Order (PDF)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[16px]">group_work</span>
+<span>Open Workspace #GRP-088</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> Acknowledged
+            </span>
+</div>
+</article>
+<!-- ALERT CARD 5: Approaching SLA Warning -->
+<article class="alert-item group relative flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all" data-bureau="PAPC" data-card-id="5" data-category="sla" data-severity="P2" data-unread="true">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-secondary-fixed-dim"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs pb-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+                SLA WARNING • APPROACHING DEADLINE (≤5 DAYS)
+              </span>
+<span class="status-unread-pill px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">
+                NEW UNREAD
+              </span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-surface-container text-on-surface-variant">
+                PAPC-2026-0019
+              </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>Yesterday, 14:15 IST</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs pb-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Marathwada Engineering College
+              </div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-data-mono text-secondary font-semibold">AICTE-DEMO-5521</span>
+<span>•</span>
+<span>Aurangabad, Maharashtra (WRO)</span>
+<span>•</span>
+<span class="font-semibold text-on-surface-variant">PAPC Bureau</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container font-data-mono text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>
+<span>5 DAYS REMAINING</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            5 days remaining before standard 30-day inquiry disposal timeline expires regarding AI/ML Curriculum lab infrastructure deficit. Institutional compliance affidavit pending submission from Head of Institution.
+          </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Assigned Officer: <strong class="text-on-surface font-medium">R. K. Singhal (PAPC)</strong></span>
+<span class="text-secondary font-semibold">Affidavit Pending: Form 12-A</span>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>View Docket Details</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Send Reminder to Principal</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" onclick="toggleCardRead(this)">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="read-toggle-label">Mark as Read</span>
+</button>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm transition-all" title="Snooze alert for 24 hours">
+<span class="material-symbols-outlined text-[16px]">snooze</span>
+<span>24h</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Column: Operational Telemetry & Rules Sidebar (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Widget 1: Alert Distribution Analytics -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Distribution by Category
+            </h2>
+<span class="font-data-mono text-label-sm text-on-surface-variant font-medium">14 Total</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Overlap Correlations -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+                  AI Overlap Correlations
+                </span>
+<span class="font-data-mono text-on-surface font-semibold">3 (21%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-on-tertiary-container" style="width: 21%;"></div>
+</div>
+</div>
+<!-- Statutory SLA Alerts -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  Statutory SLA Alerts
+                </span>
+<span class="font-data-mono text-on-surface font-semibold">5 (36%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-error" style="width: 36%;"></div>
+</div>
+</div>
+<!-- Bureau Transfers -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Inter-Bureau Transfers
+                </span>
+<span class="font-data-mono text-on-surface font-semibold">2 (14%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-secondary" style="width: 14%;"></div>
+</div>
+</div>
+<!-- Procedural Milestones -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  Coordination Milestones
+                </span>
+<span class="font-data-mono text-on-surface font-semibold">4 (29%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-secondary-container" style="width: 29%;"></div>
+</div>
+</div>
+</div>
+<!-- Mini Inline Donut Graphic Telemetry -->
+<div class="pt-space-sm p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-md">
+<div class="w-16 h-16 flex-shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-surface-container-highest" cx="18" cy="18" fill="none" r="15.9155" stroke-width="4"></circle>
+<circle class="stroke-current text-error" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="36, 100" stroke-dashoffset="0" stroke-width="4"></circle>
+<circle class="stroke-current text-on-tertiary-container" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="21, 100" stroke-dashoffset="-36" stroke-width="4"></circle>
+<circle class="stroke-current text-secondary" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="14, 100" stroke-dashoffset="-57" stroke-width="4"></circle>
+<circle class="stroke-current text-secondary-container" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="29, 100" stroke-dashoffset="-71" stroke-width="4"></circle>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">57% Urgent Attention</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 of 14 require regulatory officer intervention within 48h.</span>
+</div>
+</div>
+</div>
+<!-- Widget 2: Automated Notification Rules & Thresholds Summary -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Active Detection Rules
+            </h2>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold cursor-pointer hover:underline">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">AI Overlap Sensitivity</span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">≥ 75% Score</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Triggers multi-bureau alert &amp; auto-drafts coordination group.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SLA Tier 1 Escalation</span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">T - 5 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Automated advisory dispatched to Desk Officer &amp; Principal.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SLA Tier 2 Red Alert</span>
+<span class="px-2 py-0.5 rounded font-data-mono text-label-sm bg-error-container text-on-error-container font-bold">T - 0 Days (Breach)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mandatory dossier delivery to Member Secretary within 2h.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Trans-Bureau Auto-Dispatch</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold">ENABLED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Enabled for RB, PGRC, AB, and Regional Vigilance cells.
+              </p>
+</div>
+</div>
+</div>
+<!-- Widget 3: Quick Emergency Hotline & SOP Protocols -->
+<div class="p-space-lg rounded-2xl bg-primary text-on-primary shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/30 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-highest/15 text-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">Regulatory SOP 8.4</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Statutory Enforcement Protocols</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+            All statutory show-cause orders issued through this console carry the legal authority of the AICTE Act 1987 Section 10(p). For immediate lockouts or campus moratoriums, invoke Emergency Desk.
+          </p>
+<div class="flex flex-col gap-2 pt-space-xs">
+<a class="inline-flex items-center justify-between p-space-sm rounded-xl bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-on-primary font-label-md text-label-md transition-all" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">call</span>
+<span>Member Secy Emergency Desk</span>
+</span>
+<span class="font-data-mono text-label-sm text-secondary-fixed">Ext. 2011</span>
+</a>
+<a class="inline-flex items-center justify-between p-space-sm rounded-xl bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-on-primary font-label-md text-label-md transition-all" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">menu_book</span>
+<span>Download SOP Handbook v3.2</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">download</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Inline Micro-Interaction Controller -->
+<script>
+    // Tab and Filter Navigation Logic
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const alertItems = document.querySelectorAll('.alert-item');
+    const searchInput = document.getElementById('searchInput');
+    const bureauFilter = document.getElementById('bureauFilter');
+    const severityFilter = document.getElementById('severityFilter');
+    const unreadToggle = document.getElementById('unreadToggle');
+    const markAllReadBtn = document.getElementById('markAllReadBtn');
+    const unreadCounter = document.getElementById('unreadCounter');
+
+    let currentTab = 'all';
+
+    function applyFilters() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const bureauValue = bureauFilter.value;
+      const severityValue = severityFilter.value;
+      const showUnreadOnly = unreadToggle.checked;
+
+      alertItems.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const severity = card.getAttribute('data-severity');
+        const isUnread = card.getAttribute('data-unread') === 'true';
+        const cardBureaus = card.getAttribute('data-bureau').split(',');
+        const textContent = card.innerText.toLowerCase();
+
+        // Check Tab
+        const matchTab = currentTab === 'all' || category === currentTab;
+
+        // Check Search
+        const matchSearch = searchTerm === '' || textContent.includes(searchTerm);
+
+        // Check Bureau
+        const matchBureau = bureauValue === 'ALL' || cardBureaus.includes(bureauValue);
+
+        // Check Severity
+        const matchSeverity = severityValue === 'ALL' || severity === severityValue;
+
+        // Check Unread
+        const matchUnread = !showUnreadOnly || isUnread;
+
+        if (matchTab && matchSearch && matchBureau && matchSeverity && matchUnread) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        currentTab = btn.getAttribute('data-tab');
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+    bureauFilter.addEventListener('change', applyFilters);
+    severityFilter.addEventListener('change', applyFilters);
+    unreadToggle.addEventListener('change', applyFilters);
+
+    // Toggle single card unread state
+    window.toggleCardRead = function(button) {
+      const card = button.closest('.alert-item');
+      const isUnread = card.getAttribute('data-unread') === 'true';
+      const label = button.querySelector('.read-toggle-label');
+      const unreadPill = card.querySelector('.status-unread-pill');
+
+      if (isUnread) {
+        card.setAttribute('data-unread', 'false');
+        card.classList.add('opacity-75');
+        if (unreadPill) unreadPill.style.display = 'none';
+        label.textContent = 'Mark Unread';
+      } else {
+        card.setAttribute('data-unread', 'true');
+        card.classList.remove('opacity-75');
+        if (unreadPill) unreadPill.style.display = 'inline-flex';
+        label.textContent = 'Mark as Read';
+      }
+      updateUnreadCounter();
+      applyFilters();
+    };
+
+    function updateUnreadCounter() {
+      const remainingUnread = document.querySelectorAll('.alert-item[data-unread="true"]').length;
+      if (unreadCounter) {
+        unreadCounter.textContent = remainingUnread;
+      }
+    }
+
+    // Mark all as read action
+    if (markAllReadBtn) {
+      markAllReadBtn.addEventListener('click', () => {
+        alertItems.forEach(card => {
+          card.setAttribute('data-unread', 'false');
+          card.classList.add('opacity-75');
+          const unreadPill = card.querySelector('.status-unread-pill');
+          if (unreadPill) unreadPill.style.display = 'none';
+          const label = card.querySelector('.read-toggle-label');
+          if (label) label.textContent = 'Mark Unread';
+        });
+        updateUnreadCounter();
+        applyFilters();
+      });
+    }
+  </script>
+</div></main></div></body></html>
